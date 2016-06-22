@@ -31,7 +31,7 @@ var sPrime = function(n) {
 
     allNumbers.forEach(function(input) {
         for ( var prime = 2; prime < input; prime += 1 ) {
-            if (Number.isInteger(input / prime) === true ) {
+            if ((input % prime) === 0 ) {
                 var index = allNumbers.indexOf(input);
                 allNumbers[index] = "A";
             };
@@ -47,6 +47,7 @@ $(document).ready(function() {
 
     $("form").submit(function(event) {
         event.preventDefault();
+        $("#output").empty();
         var userInput = $("#my_number").val();
         var result = jPrime(userInput);
         result.forEach(function(n) {
