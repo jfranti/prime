@@ -16,7 +16,7 @@ var jPrime = function(n) {
             result.push(m);
         }
     });
-    // return(result);
+    return(result);
     var endTime = new Date().getTime();
     console.log(endTime - startTime);
 }
