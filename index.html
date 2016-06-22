@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- styles -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
+        <!-- scripts -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+        <script type="text/javascript" src="js/prime.js"></script>
+        <!-- title -->
+        <title>All Prime Numbers!</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="submit" class="jumbotron">
+                <h4>Prime Checker</h4>
+                <h6>Enter a number, and the magic form will return every prime number up to your number!</h6>
+                <form>
+                    <div class="form-control">
+                        <label for="ny_number">Enter a number</label>
+                        <input type="number" id="my_number">
+                    </div>
+                    <button type="submit" id="input">Submit!</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="jumbotron">
+                <ul id="output">
+
+                </ul>
+            </div>
+
+        </div>
+
+    </body>
+</html>
